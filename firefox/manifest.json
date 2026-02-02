@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Wheel Toggle Tab",
+  "version": "1.0.0",
+  "description": "Hold Alt key and scroll mouse wheel to switch between tabs",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "wheeltoggletab@example.com"
+    }
+  }
+}
