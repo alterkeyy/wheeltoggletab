@@ -1,5 +1,7 @@
 # Wheel Toggle Tab
 
+English | [简体中文](README.zh-CN.md)
+
 A browser extension for Firefox and Chrome that allows you to switch tabs by holding the Alt key and scrolling the mouse wheel.
 
 ## Features
