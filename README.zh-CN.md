@@ -70,6 +70,41 @@ wheeltoggletab/
 
 如果您希望保留 Firefox 的默认行为，只需禁用或卸载此扩展即可。
 
+## 使用限制
+
+### 浏览器内部页面
+
+出于安全原因，浏览器扩展**无法在浏览器内部页面上运行**。扩展在以下页面上无法工作：
+
+**Chrome/Edge/Brave：**
+- `chrome://` 页面（例如：`chrome://extensions`、`chrome://settings`）
+- `chrome-extension://` 页面
+- Chrome 网上应用店（`chrome.google.com/webstore`）
+- PDF 查看器（某些情况下）
+
+**Firefox：**
+- `about:` 页面（例如：`about:config`、`about:debugging`）
+- `moz-extension://` 页面
+- Firefox 附加组件网站（`addons.mozilla.org`）
+
+**为什么？** 这是浏览器的**内置安全功能**，用于防止扩展：
+- 修改浏览器设置
+- 访问敏感的浏览器数据
+- 干扰其他扩展
+- 篡改浏览器的内部页面
+
+### 支持的页面
+
+扩展在以下页面上可以完美运行：
+- 所有常规网站（`http://` 和 `https://`）
+- 本地文件（`file://`）如果您在扩展设置中启用"允许访问文件网址"
+
+### 内部页面的替代方案
+
+在浏览器内部页面上时，您可以使用浏览器内置的键盘快捷键：
+- **Ctrl + Tab**（Mac 上为 **Cmd + Tab**）- 下一个标签页
+- **Ctrl + Shift + Tab**（Mac 上为 **Cmd + Shift + Tab**）- 上一个标签页
+
 ## 故障排除
 
 如果扩展无法正常工作：

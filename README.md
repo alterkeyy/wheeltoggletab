@@ -70,6 +70,41 @@ This extension **overrides** that default behavior to switch tabs instead. The e
 
 If you prefer to keep Firefox's default behavior, simply disable or uninstall this extension.
 
+## Limitations
+
+### Browser Internal Pages
+
+For security reasons, browser extensions **cannot run on internal browser pages**. The extension will not work on:
+
+**Chrome/Edge/Brave:**
+- `chrome://` pages (e.g., `chrome://extensions`, `chrome://settings`)
+- `chrome-extension://` pages
+- Chrome Web Store (`chrome.google.com/webstore`)
+- PDF viewer (in some cases)
+
+**Firefox:**
+- `about:` pages (e.g., `about:config`, `about:debugging`)
+- `moz-extension://` pages
+- Firefox Add-ons site (`addons.mozilla.org`)
+
+**Why?** This is a **built-in security feature** by browsers to prevent extensions from:
+- Modifying browser settings
+- Accessing sensitive browser data
+- Interfering with other extensions
+- Tampering with the browser's internal pages
+
+### What Works
+
+The extension works perfectly on:
+- All regular websites (`http://` and `https://`)
+- Local files (`file://`) if you enable "Allow access to file URLs" in the extension settings
+
+### Alternative for Internal Pages
+
+When on internal browser pages, you can use the browser's built-in keyboard shortcuts:
+- **Ctrl + Tab** (or **Cmd + Tab** on Mac) - Next tab
+- **Ctrl + Shift + Tab** (or **Cmd + Shift + Tab** on Mac) - Previous tab
+
 ## Troubleshooting
 
 If the extension doesn't work:
