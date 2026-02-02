@@ -19,7 +19,8 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "wheeltoggletab@example.com"
+      "id": "wheeltoggletab@example.com",
+      "data_collection_permissions": {}
     }
   }
 }
