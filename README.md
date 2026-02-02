@@ -28,6 +28,10 @@ A browser extension for Firefox and Chrome that allows you to switch tabs by hol
 
 **Note**: For Firefox, temporary add-ons are removed when you close the browser. For permanent installation, you would need to sign the extension through Mozilla's add-on distribution.
 
+Go to https://addons.mozilla.org/developers/addon/submit/distribution   - Choose \"On your own\" (self-distribution)  - Upload `wheeltoggletab-firefox-v1.0.zip` Fill Out Information. - Extension name: Wheel Toggle Tab. Mozilla will automatically scan your extension, If it passes, you'll get a signed `.xpi` file.
+
+tips:can not find where .xpi file? see [Can't find how to download my personal add-on - Add-ons / addons.mozilla.org - Mozilla Discourse](https://discourse.mozilla.org/t/cant-find-how-to-download-my-personal-add-on/77359/3)
+
 ## Usage
 
 Simply hold down the **Alt** key and scroll your mouse wheel:

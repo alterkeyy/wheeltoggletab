@@ -28,6 +28,10 @@
 
 **注意**：Firefox 中的临时附加组件在关闭浏览器后会被移除。如需永久安装，需要通过 Mozilla 附加组件分发平台进行签名。
 
+访问 https://addons.mozilla.org/developers/addon/submit/distribution - 选择 "On your own" (自行分发) - 上传 `wheeltoggletab-firefox-v1.0.zip` 并填写信息。 - 扩展名称：Wheel Toggle Tab。Mozilla 会自动扫描您的扩展，如果通过，您将获得一个已签名的 `.xpi` 文件。
+
+提示：找不到 .xpi 文件在哪里？请参阅 [Can't find how to download my personal add-on - Add-ons / addons.mozilla.org - Mozilla Discourse](https://discourse.mozilla.org/t/cant-find-how-to-download-my-personal-add-on/77359/3)
+
 ## 使用方法
 
 只需按住 **Alt** 键并滚动鼠标滚轮：
