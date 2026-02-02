@@ -58,6 +58,16 @@ The extension is split into two folders because:
 - `tabs` - Required to switch between browser tabs
 - `<all_urls>` content script - Required to detect wheel events on all websites
 
+## Firefox Default Behavior
+
+By default, Firefox uses **Alt + Mouse Wheel** for:
+- **Alt + Wheel Up**: Navigate back in browsing history
+- **Alt + Wheel Down**: Navigate forward in browsing history
+
+This extension **overrides** that default behavior to switch tabs instead. The extension properly prevents Firefox's back/forward navigation when Alt + wheel is detected.
+
+If you prefer to keep Firefox's default behavior, simply disable or uninstall this extension.
+
 ## Troubleshooting
 
 If the extension doesn't work:
@@ -65,3 +75,4 @@ If the extension doesn't work:
 2. Check the browser console for any errors
 3. Reload the extension after making any changes
 4. Try reloading the web page where you're testing
+5. **Firefox only**: If the extension still navigates history instead of switching tabs, go to `about:config` and set `mousewheel.with_alt.action` to `0`
