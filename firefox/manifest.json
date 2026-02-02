@@ -21,7 +21,7 @@
     "gecko": {
       "id": "wheeltoggletab@example.com",
       "data_collection_permissions": {
-        "required": false
+        "required": []
       }
     }
   }
